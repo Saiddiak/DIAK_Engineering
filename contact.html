@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nous contacter — DIAK Ingénierie</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html" title="Retour à l’accueil">
+        <img src="images/logo.png" alt="Logo DIAK">
+        <span>DIAK Ingénierie</span>
+      </a>
+      <nav class="menu">
+        <a href="entreprise.html">Notre entreprise</a>
+        <a href="metiers.html">Nos métiers</a>
+        <a href="expertises.html">Nos expertises</a>
+        <a href="secteurs.html">Nos secteurs d’activités</a>
+        <a href="references.html">Nos références</a>
+        <a class="active" href="contact.html">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Nous contacter</h1>
+      <p>Remplace par tes infos (email, téléphone, WhatsApp, LinkedIn…).</p>
+    </section>
+
+    <section class="card">
+      <p>
+        Email : <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a><br>
+        Téléphone : <a href="tel:+000000000">+00 00 00 00 00</a><br>
+        LinkedIn : <a href="#">Ton lien</a>
+      </p>
+
+      <!-- Option simple : bouton WhatsApp (mets ton numéro au format international, sans + et sans espaces) -->
+      <p style="margin-top:14px;">
+        <a href="https://wa.me/0000000000" target="_blank" rel="noopener" style="font-weight:800;">
+          → Contacter sur WhatsApp
+        </a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> DIAK Ingénierie</div>
+      <div><a href="index.html">Accueil</a></div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
