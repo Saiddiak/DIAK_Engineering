@@ -1,21 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>DIAK Ingénierie</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DIAK Ingénierie — Études • Conception • Assistance</title>
+  <meta name="description" content="DIAK Ingénierie : études, conception et accompagnement technique. Contact rapide et devis." />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1b33;
+      --text:#e8eefc;
+      --muted:#a9b7d6;
+      --line:rgba(255,255,255,.12);
+      --accent:#5aa7ff;
+      --accent2:#66f0c7;
+      --shadow: 0 16px 40px rgba(0,0,0,.35);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at 15% 0%, rgba(90,167,255,.35), transparent 55%),
+        radial-gradient(900px 500px at 85% 10%, rgba(102,240,199,.22), transparent 55%),
+        var(--bg);
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px;}
+    header{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; padding:12px 0;
+    }
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: var(--shadow);
+    }
+    .brand h1{font-size:18px; margin:0}
+    nav{display:flex; gap:10px; flex-wrap:wrap}
+    nav a{
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+    }
+    nav a:hover{
+      background:rgba(255,255,255,.06);
+      border-color:var(--line);
+      color:var(--text);
+    }
+
+    .hero{
+      margin-top:18px;
+      display:grid; grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){ .hero{grid-template-columns:1fr} }
+
+    .card{
+      background: rgba(15,27,51,.82);
+      border:1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding:22px;
+      backdrop-filter: blur(8px);
+    }
+
+    .kicker{color:var(--accent2); font-weight:700; letter-spacing:.2px}
+    .title{font-size:44px; line-height:1.05; margin:10px 0 12px}
+    @media (max-width: 480px){ .title{font-size:34px} }
+
+    .lead{color:var(--muted); margin:0; font-size:16px; line-height:1.65}
+
+    .cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px; border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:700;
+    }
+    .btn.primary{
+      border:none;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#07101f;
+    }
+    .btn:hover{transform: translateY(-1px)}
+
+    .grid{
+      margin-top:18px;
+      display:grid; gap:14px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 900px){ .grid{grid-template-columns:1fr} }
+    .item h3{margin:0 0 6px; font-size:16px}
+    .item p{margin:0; color:var(--muted); line-height:1.55}
+
+    .side h2{margin:0 0 10px; font-size:18px}
+    .list{display:grid; gap:10px; margin-top:10px}
+    .tag{
+      display:flex; align-items:flex-start; gap:10px;
+      padding:12px; border-radius:16px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .dot{
+      width:10px; height:10px; margin-top:6px;
+      border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+    }
+
+    section h2{margin:0 0 10px; font-size:20px}
+    ul{margin:10px 0 0; padding-left:18px}
+    li{margin:6px 0; color:var(--muted)}
+
+    footer{
+      margin:26px 0 10px;
+      color:var(--muted);
+      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
+      border-top:1px solid var(--line);
+      padding-top:16px;
+      font-size:13px;
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>DIAK Ingénierie</h1>
+      </div>
 
-  <h1>DIAK Ingénierie</h1>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <p>
-    Bienvenue sur le site officiel de l'activité professionnelle de DIAK Engineering.
-  </p>
+    <section class="hero">
+      <div class="card">
+        <div class="kicker">Études • Conception • Assistance</div>
+        <h2 class="title">Votre partenaire pour des solutions techniques fiables.</h2>
+        <p class="lead">
+          DIAK Ingénierie accompagne vos projets avec une approche claire : analyse, dimensionnement,
+          plans et livrables. Intervention selon vos besoins, sur site ou à distance.
+        </p>
 
-  <p>
-    Site en cours de construction.
-  </p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Me contacter</a>
+          <a class="btn" href="#realisations">Voir les projets</a>
+        </div>
 
+        <div id="services" class="grid">
+          <div class="item card" style="box-shadow:none">
+            <h3>Études & dimensionnement</h3>
+            <p>Notes de calcul, optimisation, conformité et choix techniques.</p>
+          </div>
+          <div class="item card" style="box-shadow:none">
+            <h3>Conception & plans</h3>
+            <p>Schémas, plans, dossiers techniques prêts à exécuter.</p>
+          </div>
+          <div class="item card" style="box-shadow:none">
+            <h3>Assistance & suivi</h3>
+            <p>Support projet, coordination, contrôle qualité et livrables.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card side" id="apropos">
+        <h2>À propos</h2>
+        <p class="lead">
+          (Remplace ce texte) : 2–3 lignes sur ton expérience, ton secteur et ta manière de travailler.
+        </p>
+
+        <div class="list">
+          <div class="tag">
+            <div class="dot"></div>
+            <div>
+              <strong>Zone</strong><br/>
+              <span style="font-size:13px;color:var(--muted)">Ex: France / Maroc / Remote</span>
+            </div>
+          </div>
+
+          <div class="tag">
+            <div class="dot"></div>
+            <div>
+              <strong>Spécialités</strong><br/>
+              <span style="font-size:13px;color:var(--muted)">Ex: AutoCAD, Revit, SolidWorks…</span>
+            </div>
+          </div>
+
+          <div class="tag">
+            <div class="dot"></div>
+            <div>
+              <strong>Réponse</strong><br/>
+              <span style="font-size:13px;color:var(--muted)">Ex: sous 24h</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" id="realisations" style="margin-top:18px">
+      <h2>Réalisations</h2>
+      <p class="lead">Mets 3 à 6 projets avec résultat concret (avant/après, délais, livrable).</p>
+      <ul>
+        <li>Projet A — description + résultat</li>
+        <li>Projet B — description + résultat</li>
+        <li>Projet C — description + résultat</li>
+      </ul>
+    </section>
+
+    <section class="card" id="contact" style="margin-top:18px">
+      <h2>Contact</h2>
+      <p class="lead">
+        Email : <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a><br/>
+        Téléphone : <a href="tel:+000000000">+00 00 00 00 00</a><br/>
+        LinkedIn : <a href="#">Ton lien LinkedIn</a>
+      </p>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> DIAK Ingénierie.</div>
+      <div>Site hébergé sur GitHub Pages.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
