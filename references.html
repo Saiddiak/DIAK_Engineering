@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nos références — DIAK Ingénierie</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="index.html" title="Retour à l’accueil">
+        <img src="images/logo.png" alt="Logo DIAK">
+        <span>DIAK Ingénierie</span>
+      </a>
+      <nav class="menu">
+        <a href="entreprise.html">Notre entreprise</a>
+        <a href="metiers.html">Nos métiers</a>
+        <a href="expertises.html">Nos expertises</a>
+        <a href="secteurs.html">Nos secteurs d’activités</a>
+        <a class="active" href="references.html">Nos références</a>
+        <a href="contact.html">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Nos références</h1>
+      <p>Liste tes projets : client (optionnel), mission, résultat, année.</p>
+    </section>
+
+    <section class="card">
+      <ul>
+        <li>Projet 1 — mission + résultat</li>
+        <li>Projet 2 — mission + résultat</li>
+        <li>Projet 3 — mission + résultat</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> DIAK Ingénierie</div>
+      <div><a href="index.html">Accueil</a></div>
+    </footer>
+  </main>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
