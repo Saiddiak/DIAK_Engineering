@@ -7,40 +7,100 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="index.html" title="Retour à l’accueil">
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" title="Retour à l’accueil">
+      <img src="images/logo.png" alt="Logo DIAK">
+      <span>DIAK Ingénierie</span>
+    </a>
+
+    <nav class="nav">
+      <a class="active" href="entreprise.html">Notre entreprise</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="expertises.html">Nos expertises</a>
+      <a href="secteurs.html">Nos secteurs</a>
+      <a href="references.html">Nos références</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Notre entreprise</h1>
+      <p class="lead">Présentation de DIAK Ingénierie : mission, valeurs, méthode de travail.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="block">
+        <h2>Notre mission</h2>
+        <p class="lead">
+          Nous accompagnons vos projets avec des livrables clairs, conformes et exploitables :
+          études, conception et assistance technique.
+        </p>
+      </div>
+
+      <div class="block" style="margin-top:18px;">
+        <h2>Pourquoi nous choisir</h2>
+        <ul>
+          <li>Qualité et conformité (normes, règles de l’art)</li>
+          <li>Communication simple et suivi sérieux</li>
+          <li>Délais respectés et livrables propres</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Logo DIAK">
         <span>DIAK Ingénierie</span>
       </a>
-      <nav class="menu">
-        <a class="active" href="entreprise.html">Notre entreprise</a>
+      <p style="margin-top:10px">
+        (Adresse)<br>
+        (Ville / Pays)<br>
+        (Téléphone)<br>
+        (Email)
+      </p>
+    </div>
+
+    <div>
+      <h4>Coordonnées</h4>
+      <p>
+        (Adresse)<br>
+        (Ville / Pays)<br><br>
+        (Téléphone)<br>
+        (Email)
+      </p>
+    </div>
+
+    <div>
+      <h4>Liens rapides</h4>
+      <div class="footer-links">
+        <a href="entreprise.html">Notre entreprise</a>
         <a href="metiers.html">Nos métiers</a>
         <a href="expertises.html">Nos expertises</a>
-        <a href="secteurs.html">Nos secteurs d’activités</a>
-        <a href="references.html">Nos références</a>
-        <a href="contact.html">Nous contacter</a>
-      </nav>
+        <a href="secteurs.html">Nos secteurs</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Notre entreprise</h1>
-      <p>Histoire, mission, valeurs, équipe, zone d’intervention…</p>
-    </section>
+  <div class="footer-bottom">
+    © <span id="year"></span> DIAK Ingénierie. Tous droits réservés.
+  </div>
+</footer>
 
-    <section class="card">
-      <h3>Notre mission</h3>
-      <p>Texte à compléter…</p>
-    </section>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-    <footer class="footer">
-      <div>© <span id="year"></span> DIAK Ingénierie</div>
-      <div><a href="index.html">Accueil</a></div>
-    </footer>
-  </main>
-
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
