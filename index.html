@@ -3,63 +3,136 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DIAK Ingénierie</title>
+  <title>DIAK Ingénierie — Bureau d’études</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="index.html" title="Retour à l’accueil">
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" title="Retour à l’accueil">
+      <img src="images/logo.png" alt="Logo DIAK">
+      <span>DIAK Ingénierie</span>
+    </a>
+
+    <nav class="nav">
+      <a href="entreprise.html">Notre entreprise</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="expertises.html">Nos expertises</a>
+      <a href="references.html">Nos références</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="h1">Bureau d’études<br/>et ingénierie technique</h1>
+        <p class="lead">
+          Études, conception et assistance pour vos projets industriels et bâtiments.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn-primary" href="contact.html">Nous contacter</a>
+          <a class="btn-ghost" href="expertises.html">Nos expertises</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <!-- Tu peux remplacer l’image par la tienne : images/hero.jpg -->
+        <img src="https://images.unsplash.com/photo-1581091870627-3afc6f7b4bce?auto=format&fit=crop&w=1400&q=80"
+             alt="Ingénierie sur chantier">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="container cards">
+      <div class="card">
+        <div class="icon">📐</div>
+        <h3>Études</h3>
+        <p>Notes de calcul, dimensionnement, et conformité réglementaire.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🧩</div>
+        <h3>Conception</h3>
+        <p>Plans, schémas, dossiers techniques prêts à exécuter.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎧</div>
+        <h3>Assistance</h3>
+        <p>Accompagnement projet, suivi et support technique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="block">
+        <h2>Nous proposons une expertise adaptée à votre besoin</h2>
+        <ul>
+          <li>Analyse rapide, solutions claires, livrables professionnels.</li>
+          <li>Respect des normes, qualité et délais.</li>
+          <li>Intervention sur site ou à distance.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Logo DIAK">
         <span>DIAK Ingénierie</span>
       </a>
+      <p style="margin-top:10px">
+        123 Rue des Sciences<br>
+        75000 Paris<br>
+        +33 1 23 45 67 89<br>
+        contact@diak-ingenierie.fr
+      </p>
+    </div>
 
-      <nav class="menu">
-        <a class="active" href="entreprise.html">Notre entreprise</a>
+    <div>
+      <h4>Coordonnées</h4>
+      <p>
+        123 Rue des Sciences<br>
+        75000 Paris<br><br>
+        +33 1 23 45 67 89<br>
+        contact@diak-ingenierie.fr
+      </p>
+    </div>
+
+    <div>
+      <h4>Liens rapides</h4>
+      <div class="footer-links">
+        <a href="entreprise.html">Notre entreprise</a>
         <a href="metiers.html">Nos métiers</a>
         <a href="expertises.html">Nos expertises</a>
         <a href="secteurs.html">Nos secteurs d’activités</a>
-        <a href="references.html">Nos références</a>
-        <a href="contact.html">Nous contacter</a>
-      </nav>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Bienvenue chez DIAK Ingénierie</h1>
-      <p>
-        Remplace ce texte par une présentation courte : qui vous êtes, ce que vous faites,
-        et votre valeur ajoutée (qualité, délais, conformité, innovation…).
-      </p>
-    </section>
+  <div class="footer-bottom">
+    © <span id="year"></span> DIAK Ingénierie. Tous droits réservés.
+  </div>
+</footer>
 
-    <section class="card">
-      <div class="grid">
-        <div class="card">
-          <h3>Études</h3>
-          <p>Notes de calcul, dimensionnement, optimisation et conformité.</p>
-        </div>
-        <div class="card">
-          <h3>Conception</h3>
-          <p>Plans, schémas, dossiers techniques prêts à exécuter.</p>
-        </div>
-        <div class="card">
-          <h3>Assistance</h3>
-          <p>Accompagnement projet, suivi et support technique.</p>
-        </div>
-      </div>
-    </section>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
-    <footer class="footer">
-      <div>© <span id="year"></span> DIAK Ingénierie</div>
-      <div><a href="contact.html">Contact</a></div>
-    </footer>
-  </main>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
