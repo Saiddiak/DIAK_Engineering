@@ -7,43 +7,74 @@
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="index.html" title="Retour à l’accueil">
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Logo DIAK">
+      <span>DIAK Ingénierie</span>
+    </a>
+
+    <nav class="nav">
+      <a href="entreprise.html">Notre entreprise</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="expertises.html">Nos expertises</a>
+      <a href="secteurs.html">Nos secteurs</a>
+      <a class="active" href="references.html">Nos références</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Nos références</h1>
+      <p class="lead">Quelques projets réalisés (tu remplaces par tes vrais projets).</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="block">
+        <h2>Projets</h2>
+        <ul>
+          <li><strong>Projet A</strong> — Mission, livrables, résultat.</li>
+          <li><strong>Projet B</strong> — Mission, livrables, résultat.</li>
+          <li><strong>Projet C</strong> — Mission, livrables, résultat.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Logo DIAK">
         <span>DIAK Ingénierie</span>
       </a>
-      <nav class="menu">
+      <p style="margin-top:10px">(Adresse) • (Téléphone) • (Email)</p>
+    </div>
+    <div>
+      <h4>Coordonnées</h4>
+      <p>(Adresse)<br>(Ville / Pays)<br><br>(Téléphone)<br>(Email)</p>
+    </div>
+    <div>
+      <h4>Liens rapides</h4>
+      <div class="footer-links">
         <a href="entreprise.html">Notre entreprise</a>
         <a href="metiers.html">Nos métiers</a>
         <a href="expertises.html">Nos expertises</a>
-        <a href="secteurs.html">Nos secteurs d’activités</a>
-        <a class="active" href="references.html">Nos références</a>
-        <a href="contact.html">Nous contacter</a>
-      </nav>
+        <a href="secteurs.html">Nos secteurs</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
+  <div class="footer-bottom">© <span id="year"></span> DIAK Ingénierie.</div>
+</footer>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Nos références</h1>
-      <p>Liste tes projets : client (optionnel), mission, résultat, année.</p>
-    </section>
-
-    <section class="card">
-      <ul>
-        <li>Projet 1 — mission + résultat</li>
-        <li>Projet 2 — mission + résultat</li>
-        <li>Projet 3 — mission + résultat</li>
-      </ul>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="year"></span> DIAK Ingénierie</div>
-      <div><a href="index.html">Accueil</a></div>
-    </footer>
-  </main>
-
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
