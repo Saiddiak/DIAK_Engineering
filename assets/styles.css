@@ -148,8 +148,8 @@ img{max-width:100%;display:block}
 }
 .hero-media img{
   width:980px;
-  height:320px;
-  object-fit:contain;
+   height:100%;
+  object-fit:cover;
 }
 
 /* ===== SERVICES ===== */
