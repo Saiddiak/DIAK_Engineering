@@ -3,54 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nous contacter — DIAK Ingénierie</title>
+  <title>Contact — DIAK Ingénierie</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="index.html" title="Retour à l’accueil">
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Logo DIAK">
+      <span>DIAK Ingénierie</span>
+    </a>
+
+    <nav class="nav">
+      <a href="entreprise.html">Notre entreprise</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="expertises.html">Nos expertises</a>
+      <a href="secteurs.html">Nos secteurs</a>
+      <a href="references.html">Nos références</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Nous contacter</h1>
+      <p class="lead">Remplace avec tes infos réelles. Tu peux ajouter WhatsApp/LinkedIn.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="block">
+        <h2>Coordonnées</h2>
+        <ul>
+          <li>Email : <a href="mailto:contact@diak-ingenierie.fr">contact@diak-ingenierie.fr</a></li>
+          <li>Téléphone : <a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+          <li>Adresse : 123 Rue des Sciences, 75000 Paris</li>
+        </ul>
+
+        <div style="margin-top:14px;">
+          <a class="btn-primary" href="mailto:contact@diak-ingenierie.fr">Envoyer un email</a>
+          <a class="btn-ghost" href="index.html" style="margin-left:10px;">Retour accueil</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Logo DIAK">
         <span>DIAK Ingénierie</span>
       </a>
-      <nav class="menu">
+      <p style="margin-top:10px">(Adresse) • (Téléphone) • (Email)</p>
+    </div>
+    <div>
+      <h4>Coordonnées</h4>
+      <p>(Adresse)<br>(Ville / Pays)<br><br>(Téléphone)<br>(Email)</p>
+    </div>
+    <div>
+      <h4>Liens rapides</h4>
+      <div class="footer-links">
         <a href="entreprise.html">Notre entreprise</a>
         <a href="metiers.html">Nos métiers</a>
         <a href="expertises.html">Nos expertises</a>
-        <a href="secteurs.html">Nos secteurs d’activités</a>
+        <a href="secteurs.html">Nos secteurs</a>
         <a href="references.html">Nos références</a>
-        <a class="active" href="contact.html">Nous contacter</a>
-      </nav>
+      </div>
     </div>
   </div>
+  <div class="footer-bottom">© <span id="year"></span> DIAK Ingénierie.</div>
+</footer>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Nous contacter</h1>
-      <p>Remplace par tes infos (email, téléphone, WhatsApp, LinkedIn…).</p>
-    </section>
-
-    <section class="card">
-      <p>
-        Email : <a href="mailto:tonemail@exemple.com">tonemail@exemple.com</a><br>
-        Téléphone : <a href="tel:+000000000">+00 00 00 00 00</a><br>
-        LinkedIn : <a href="#">Ton lien</a>
-      </p>
-
-      <!-- Option simple : bouton WhatsApp (mets ton numéro au format international, sans + et sans espaces) -->
-      <p style="margin-top:14px;">
-        <a href="https://wa.me/0000000000" target="_blank" rel="noopener" style="font-weight:800;">
-          → Contacter sur WhatsApp
-        </a>
-      </p>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="year"></span> DIAK Ingénierie</div>
-      <div><a href="index.html">Accueil</a></div>
-    </footer>
-  </main>
-
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
