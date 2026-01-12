@@ -3,47 +3,85 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nos secteurs d’activités — DIAK Ingénierie</title>
+  <title>Nos secteurs — DIAK Ingénierie</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <a class="brand" href="index.html" title="Retour à l’accueil">
+
+<header class="header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Logo DIAK">
+      <span>DIAK Ingénierie</span>
+    </a>
+
+    <nav class="nav">
+      <a href="entreprise.html">Notre entreprise</a>
+      <a href="metiers.html">Nos métiers</a>
+      <a href="expertises.html">Nos expertises</a>
+      <a class="active" href="secteurs.html">Nos secteurs</a>
+      <a href="references.html">Nos références</a>
+      <a class="btn" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="h1">Nos secteurs</h1>
+      <p class="lead">Bâtiments, industrie, infrastructures… (à adapter selon ton activité).</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cards">
+      <div class="card">
+        <div class="icon">🏗️</div>
+        <h3>Bâtiments</h3>
+        <p>Études et conception pour projets tertiaires et résidentiels.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏭</div>
+        <h3>Industrie</h3>
+        <p>Support technique, optimisation, dossiers et suivi.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛣️</div>
+        <h3>Infrastructures</h3>
+        <p>Études, plans et accompagnement de projets d’infrastructure.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Logo DIAK">
         <span>DIAK Ingénierie</span>
       </a>
-      <nav class="menu">
+      <p style="margin-top:10px">(Adresse) • (Téléphone) • (Email)</p>
+    </div>
+    <div>
+      <h4>Coordonnées</h4>
+      <p>(Adresse)<br>(Ville / Pays)<br><br>(Téléphone)<br>(Email)</p>
+    </div>
+    <div>
+      <h4>Liens rapides</h4>
+      <div class="footer-links">
         <a href="entreprise.html">Notre entreprise</a>
         <a href="metiers.html">Nos métiers</a>
         <a href="expertises.html">Nos expertises</a>
-        <a class="active" href="secteurs.html">Nos secteurs d’activités</a>
         <a href="references.html">Nos références</a>
-        <a href="contact.html">Nous contacter</a>
-      </nav>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
+  <div class="footer-bottom">© <span id="year"></span> DIAK Ingénierie.</div>
+</footer>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Nos secteurs d’activités</h1>
-      <p>BTP, industrie, énergie, infrastructure, tertiaire… (à compléter).</p>
-    </section>
-
-    <section class="card">
-      <div class="grid">
-        <div class="card"><h3>Secteur 1</h3><p>Exemples + services liés…</p></div>
-        <div class="card"><h3>Secteur 2</h3><p>Exemples + services liés…</p></div>
-        <div class="card"><h3>Secteur 3</h3><p>Exemples + services liés…</p></div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div>© <span id="year"></span> DIAK Ingénierie</div>
-      <div><a href="index.html">Accueil</a></div>
-    </footer>
-  </main>
-
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
